@@ -109,7 +109,7 @@ app.put(baseUrl, (req: Request, res: Response) => {
 });
 
 app.delete(baseUrl, (req: Request, res: Response) => {
-  const id: any = req?.body?.id;
+  const id: any = req?.query?.id;
 
   if (!id) {
     res.status(302);
